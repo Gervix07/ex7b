@@ -10,7 +10,8 @@ function checkSID() {
 
 function checkCandiNo() {
   let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
+  // เช็คว่าไม่ใช่ตัวเลข หรือ ค่าน้อยกว่า 1 หรือ ค่ามากกว่า 10
+  if (isNaN(candi) || candi < 1 || candi > 10) {
     return false;
   } else {
     return true;
